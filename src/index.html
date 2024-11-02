@@ -6,8 +6,8 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-[#EEF4FF] font-sans flex flex-col">
-        <nav class="bg-[#EEF4FF] shadow-md p-4 flex items-center justify-between">
+    <div class="bg-white font-sans flex flex-col">
+        <nav class="bg-white shadow-md p-4 flex items-center justify-between">
           <!-- Logo -->
           <div class="flex items-center">
             <img src="../src/img/Logo.png" alt="logo" class="h-8 w-8 mr-4 ">
@@ -38,7 +38,7 @@
         </nav>
       
         <!-- Mobile Menu Links -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[#EEF4FF] shadow-md">
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
           <ul class="space-y-4 py-4 text-gray-700 text-center">
             <li><a href="#home" class="hover:text-blue-500 font-semibold">Home</a></li>
             <li><a href="#features" class="hover:text-blue-500">Features</a></li>
@@ -48,36 +48,44 @@
         </div>
 
         <!-- hero -->
-        <div class="flex flex-col md:flex-row items-center p-8 md:p-16">
-          <div class="md:w-1/2 text-left md:text-left space-y-4">
+         
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 text-left md:text-left space-y-4 items-center p-8">
               <p class="text-3xl md:text-5xl font-semibold leading-tight">
                   Manage Schedule and Task Easily
               </p>
               <p class=" md:text-lg">
                   Create and organize your schedule and task deadlines better. Manage them easily and never fall behind on your activities and tasks.
               </p>
-              <a href="#app" class="inline-block border border-blue-500 rounded-full px-6 py-3 bg-blue-500 text-white hover:text-blue-500 hover:bg-[#EEF4FF] transition duration-300">
+              <a href="#app" class="inline-block border border-blue-500 rounded-full px-6 py-3 bg-blue-500 text-white hover:text-blue-500 hover:bg-white transition duration-300">
                   About App
               </a>
           </div>
-          <div class="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
-              <img src="../src/img/Hero Image.png" alt="Hero Image" class="w-full md:max-w-sm rounded-lg">
+          <div class="bg-[#EEF4FF] w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
+              <img src="../src/img/Hero Image.png" alt="Hero Image" class="w-full bg-auto md:bg-contain md:max-w-sm">
           </div>
-      </div>
-      
-        <!-- <div class="bg-slate-500 flex flex-col md:flex-row">
-            <div class="w-1/2">
-              <p class="text-5xl text-left font-semibold">Manage Schedule and Task Easy</p>
-              <p>Create and organize schedule and task deadline become better, easy manage and certainly no longer lagging behind schedule of activities and task</p>
-              <a href="#app" class="border border-blue-500 rounded-full px-4 py-2 bg-blue-500 text-white hover:text-blue-500 hover:bg-white ">
-                About App
-              </a>
-            </div>
-            <div class="w-fit p-0 ml-0 mr-0">
-              <img src="../src/img/Hero Image.png" alt="">
-            </div>
-        </div> -->
-      
+        </div>
+
+        <!-- features -->
+        <div class="flex flex-col md:flex-row bg-white py-6 px-6">
+          
+          <div class="flex-1 flex flex-col items-center md:items-start">
+            <img src="../src/img/uim_schedule.png" alt="" class="mb-2 bg-[#EEF4FF] border border-[#EEF4FF] rounded-full p-4">
+            <h1 class="text-center md:text-left font-bold">Set a better deadline tasks</h1>
+            <span class="text-center md:text-left">You can make your duty deadlines better and more orderly</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center md:items-start">
+            <img src="../src/img/uim_layer-group.png" alt="" class="mb-2 bg-[#EEF4FF] border border-[#EEF4FF] rounded-full p-4">
+            <h1 class="text-center md:text-left font-bold">Manage the tasks so easily</h1>
+            <span class="text-center md:text-left">You can manage the deadlines and the schedule becomes easy</span>
+          </div>
+          <div class="flex-1 flex flex-col items-center md:items-start">
+            <img src="../src/img/ri_notification-fill.png" alt="" class="mb-2 bg-[#EEF4FF] border border-[#EEF4FF] rounded-full p-4">
+            <h1 class="text-center md:text-left font-bold">Wouldnt miss notifications</h1>
+            <span class="text-center md:text-left">Of course you will always get the tasks and schedule notifications</span>
+          </div>
+        </div>
+        
         <script>
           function toggleNavbar() {
             const mobileMenu = document.getElementById("mobile-menu");
