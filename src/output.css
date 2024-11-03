@@ -559,6 +559,11 @@ video {
   margin-right: 2.5rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -572,11 +577,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .mb-2 {
@@ -983,6 +983,39 @@ video {
 
   .md\:items-start {
     align-items: flex-start;
+  }
+
+  .md\:rounded-\[50px\] {
+    border-radius: 50px;
+  }
+
+  .md\:rounded-b-\[50px\] {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .md\:rounded-tr-3xl {
+    border-top-right-radius: 1.5rem;
+  }
+
+  .md\:rounded-br-3xl {
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  .md\:rounded-br-\[50px\] {
+    border-bottom-right-radius: 50px;
+  }
+
+  .md\:rounded-tr-\[50px\] {
+    border-top-right-radius: 50px;
+  }
+
+  .md\:rounded-bl-\[50px\] {
+    border-bottom-left-radius: 50px;
+  }
+
+  .md\:rounded-tl-\[50px\] {
+    border-top-left-radius: 50px;
   }
 
   .md\:bg-contain {
